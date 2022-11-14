@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.LoginController">
+   <top>
+      <AnchorPane prefHeight="200.0" prefWidth="450.0" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="loginImageView" fitHeight="150.0" fitWidth="200.0" layoutX="150.0" layoutY="73.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../images/warehouseIcon.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="52.0" layoutY="21.0" text="Warehouse Accounting System" textFill="#1310cc">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </top>
+   <right>
+      <AnchorPane prefHeight="367.0" prefWidth="454.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="66.0" layoutY="63.0" text="Username" textFill="#1310cc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="69.0" layoutY="152.0" text="Password" textFill="#1310cc">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="225.0" layoutY="63.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <PasswordField fx:id="password" layoutX="225.0" layoutY="152.0" prefHeight="26.0" prefWidth="165.0">
+               <font>
+                  <Font size="14.0" />
+               </font></PasswordField>
+            <Button fx:id="registerButton" cancelButton="true" layoutX="32.0" layoutY="261.0" mnemonicParsing="false" onAction="#registerButtonOnAction" prefHeight="43.0" prefWidth="157.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Register" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="signInButton" layoutX="234.0" layoutY="261.0" mnemonicParsing="false" onAction="#signInButtonOnAction" prefHeight="43.0" prefWidth="157.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Sign In" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Label layoutX="19.0" layoutY="206.0" text="Invalid Username or Password!Please check if your input is correct!" textFill="#ff1a00" visible="false">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="197.0" layoutY="14.0" text="Login" textAlignment="CENTER" textFill="#1310cc">
+               <font>
+                  <Font size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </right>
+</BorderPane>

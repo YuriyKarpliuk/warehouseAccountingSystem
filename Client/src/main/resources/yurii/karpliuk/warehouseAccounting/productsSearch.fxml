@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="564.0" prefWidth="848.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.ProductsController">
+   <children>
+      <Label layoutX="62.0" layoutY="56.0" text="Search products" textFill="#1310cc">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordField" layoutX="271.0" layoutY="56.0" prefHeight="38.0" prefWidth="542.0" promptText="Keywords...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TableView fx:id="productsTable" layoutX="36.0" layoutY="108.0" prefHeight="368.0" prefWidth="775.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="50.0" text="ID" />
+            <TableColumn fx:id="name" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="category" prefWidth="100.0" text="Category" />
+            <TableColumn fx:id="image" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Image" />
+            <TableColumn fx:id="description" prefWidth="100.0" text="Description" />
+            <TableColumn fx:id="price" prefWidth="75.0" text="Price" />
+            <TableColumn fx:id="quantity" prefWidth="75.0" text="Quantity" />
+            <TableColumn fx:id="supplierName" prefWidth="100.0" text="Supplier name" />
+            <TableColumn fx:id="code" prefWidth="75.0" text="Code" />
+         </columns>
+      </TableView>
+      <Button fx:id="backButton" layoutX="346.0" layoutY="495.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="RefreshButton" layoutX="635.0" layoutY="495.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

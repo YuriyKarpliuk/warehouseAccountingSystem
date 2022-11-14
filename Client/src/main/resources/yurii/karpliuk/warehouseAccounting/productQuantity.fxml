@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="130.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.ProductQuantityController">
+   <children>
+      <Label layoutX="82.0" layoutY="14.0" text="Enter quantity" textFill="#1310cc">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField fx:id="quantity" layoutX="82.0" layoutY="50.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="quantityOkButton" layoutX="82.0" layoutY="91.0" mnemonicParsing="false" onAction="#quantityOkButtonOnAction" prefHeight="26.0" prefWidth="62.0" style="-fx-background-color: #1310cc;" text="Ok" textFill="WHITE" />
+      <Button fx:id="quantityCancelButton" layoutX="169.0" layoutY="91.0" mnemonicParsing="false" onAction="#quantityCancelButtonOnAction" prefHeight="26.0" prefWidth="61.0" style="-fx-background-color: #1310cc;" text="Cancel" textFill="WHITE" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="14.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../images/icons8-question-mark-64.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

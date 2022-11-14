@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="450.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.AdminMainController">
+   <children>
+      <Button fx:id="searchCustomers" cancelButton="true" layoutX="131.0" layoutY="87.0" mnemonicParsing="false" onAction="#searchCustomersOnAction" prefHeight="46.0" prefWidth="188.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Search customers" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="searchSuppliers" cancelButton="true" layoutX="131.0" layoutY="162.0" mnemonicParsing="false" onAction="#searchSuppliersOnAction" prefHeight="46.0" prefWidth="188.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Search suppliers" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="searchProducts" cancelButton="true" layoutX="131.0" layoutY="242.0" mnemonicParsing="false" onAction="#searchProductsOnAction" prefHeight="46.0" prefWidth="188.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Search products" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="supplyTransactionsButton" cancelButton="true" layoutX="71.0" layoutY="323.0" mnemonicParsing="false" onAction="#supplyTransactionsButtonOnAction" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Search supply transactions " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="salesTransactionButton" cancelButton="true" layoutX="71.0" layoutY="403.0" mnemonicParsing="false" onAction="#salesTransactionButtonActionOn" prefHeight="46.0" prefWidth="308.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Search sales  transactions " textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="logoutButton" cancelButton="true" layoutX="131.0" layoutY="486.0" mnemonicParsing="false" onAction="#logoutButtonOnAction" prefHeight="46.0" prefWidth="188.0" style="-fx-background-color: #1310cc; -fx-border-color: white;" text="Logout" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="127.0" layoutY="22.0" text="Choose action:" textFill="#1310cc">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

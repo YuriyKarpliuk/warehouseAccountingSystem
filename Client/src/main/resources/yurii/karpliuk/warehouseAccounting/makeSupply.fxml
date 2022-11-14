@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="650.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.MakeSupplyController">
+   <children>
+      <Button fx:id="backButton" layoutX="45.0" layoutY="333.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="65.0" layoutY="78.0" prefHeight="38.0" prefWidth="120.0" text="Product name" textFill="#1310cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="85.0" layoutY="135.0" prefHeight="38.0" prefWidth="80.0" text="Category" textFill="#1310cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="196.0" prefHeight="38.0" prefWidth="108.0" text="Price(by one)" textFill="#1310cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="71.0" layoutY="250.0" prefHeight="38.0" prefWidth="80.0" text="Quantity" textFill="#1310cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="373.0" layoutY="78.0" prefHeight="38.0" prefWidth="94.0" text="Description" textFill="#1310cc">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="productName" layoutX="185.0" layoutY="82.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <ChoiceBox fx:id="categoryChoiceBox" layoutX="185.0" layoutY="141.0" prefWidth="114.0" style="-fx-background-color: white;" />
+      <TextField fx:id="price" layoutX="185.0" layoutY="199.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="description" layoutX="473.0" layoutY="82.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="quantity" layoutX="185.0" layoutY="254.0" prefHeight="30.0" prefWidth="114.0" style="-fx-background-color: white;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button fx:id="imagePath" layoutX="424.0" layoutY="264.0" mnemonicParsing="false" onAction="#addImageOnAction" style="-fx-background-color: #1310cc;" text="Add image" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fx:id="image" fitHeight="120.0" fitWidth="120.0" layoutX="420.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="makeSupply" layoutX="385.0" layoutY="333.0" mnemonicParsing="false" onAction="#makeSupplyOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Supply products" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

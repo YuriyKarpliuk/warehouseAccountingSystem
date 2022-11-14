@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="564.0" prefWidth="848.0" style="-fx-background-color: #F5DEB3;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="yurii.karpliuk.warehouseAccounting.controllers.MakeOrderController">
+   <children>
+      <TableView fx:id="searchProducts" layoutX="70.0" layoutY="112.0" prefHeight="368.0" prefWidth="740.0">
+         <columns>
+            <TableColumn fx:id="colName" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Name" />
+            <TableColumn fx:id="categoryCol" prefWidth="100.0" style="-fx-alignment: CENTER;" text="Category" />
+            <TableColumn fx:id="imageCol" prefWidth="134.3999481201172" style="-fx-alignment: CENTER;" text="Image" />
+            <TableColumn fx:id="descriptionCol" prefWidth="200.0" style="-fx-alignment: CENTER;" text="Description" />
+            <TableColumn fx:id="priceCol" prefWidth="64.0" style="-fx-alignment: CENTER;" text="Price" />
+            <TableColumn fx:id="stockCol" prefWidth="63.20001220703125" style="-fx-alignment: CENTER;" text="Stock" />
+            <TableColumn fx:id="codeCol" prefWidth="75.0" style="-fx-alignment: CENTER;" text="Code" />
+         </columns>
+      </TableView>
+      <Label layoutX="70.0" layoutY="47.0" prefHeight="38.0" prefWidth="185.0" text="Search products" textFill="#1310cc">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </Label>
+      <TextField fx:id="keywordField" layoutX="280.0" layoutY="47.0" prefHeight="38.0" prefWidth="463.0" promptText="Keywords...">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="backButton" layoutX="70.0" layoutY="494.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="CartButton" layoutX="264.0" layoutY="494.0" mnemonicParsing="false" onAction="#CartButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Cart" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="addToCart" layoutX="634.0" layoutY="494.0" mnemonicParsing="false" onAction="#addToCartButtonOnAction" prefHeight="38.0" prefWidth="175.0" style="-fx-background-color: #1310cc;" text="Add to cart" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="RefreshButton" layoutX="494.0" layoutY="494.0" mnemonicParsing="false" onAction="#refreshButtonOnAction" prefHeight="18.0" prefWidth="106.0" style="-fx-background-color: #1310cc;" text="Refresh" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
